@@ -1,0 +1,17 @@
+.how_to_play_button {
+    background-color: black;
+    color: aliceblue;
+    padding: 2px;
+    border-style: none;
+    display: block;
+}
+.dropdown_true {
+    border-style: solid;
+    border-width: 1px;
+    visibility: visible;
+}
+.dropdown_false {
+    border-style: solid;
+    border-width: 1px;
+    visibility: hidden;
+}

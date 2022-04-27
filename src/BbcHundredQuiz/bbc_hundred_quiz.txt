@@ -1,0 +1,10 @@
+Component
+
+ 1 - Timer
+ 2 - ScoreCounter
+ 3 - HowToPlay
+ 4 - InputAnswer
+ 5 - DataTable
+ 6 - GiveUp
+ 7 - TryAgain
+ 8 - ShowAnswer
