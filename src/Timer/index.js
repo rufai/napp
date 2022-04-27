@@ -1,7 +1,7 @@
 
 import { useState } from "react"
 
-const Timer = () => {
+const Timer = ({shouldStartCountDown}) => {
     let [startTime, setStartTime] =  useState(300)
 
     let END_TIME = "00:00"
@@ -18,7 +18,9 @@ const Timer = () => {
             }
         }, 1000)
     }
-    triggerTimer()
+    if(shouldStartCountDown){
+        triggerTimer()
+    }
 
     let formatSecondsToMinute = ( secs ) => {
         let minute = `${parseInt( secs / 60 )}`

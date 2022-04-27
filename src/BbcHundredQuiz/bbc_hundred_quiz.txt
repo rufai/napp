@@ -3,7 +3,7 @@ Component
  1 - Timer
  2 - ScoreCounter
  3 - HowToPlay
- 4 - InputAnswer
+ 4 - InputAnswer /  9 - StartQuiz  ==> QuizInput
  5 - DataTable
  6 - GiveUp
  7 - TryAgain
