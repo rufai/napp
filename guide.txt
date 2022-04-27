@@ -1,0 +1,160 @@
+Introduction To React
+--------------------
+A JavaScript library for building user interfaces.
+
+-- JavaScript ( language + html + css )
+-- library (  it has just one job )
+-- ui ( user interfaces ) (  DOM ) ( anything user can see )
+    = hmtl + css + js
+
+- way to build to manage complexity
+
+- library ( just one thing ) / framework ( many thing )
+
+web application
+    - build interfaces
+    - data fetching
+    - authentication
+    - caching
+
+- framework on React    
+    - nextjs
+    - vercel
+    - react native
+
+Build interfaces
+    - web
+    - mobile
+    - desktop
+    - wearable
+
+
+To Understand React
+    - your code must be declarative
+    - your application should be component based
+    - write once, launch anywhere
+
+
+BBC / yelp / maps / youtube / twitter 
+    - 17 components
+    - join together to form that single interface
+
+Declarative || Imperative
+ - do simple things ( use latest js features )
+
+
+- nodejs
+- 
+
+To Start
+    - open your terminal
+    - generate a new project
+    npx create-react-app lowercasenameofapp
+    - wait for a while
+    - enter the folder
+    cd lowercasenameofapp
+    - run your app
+    npm start
+
+
+What was generated?
+
+     - node_modules
+        * It contains packages that react needs for it to function. 
+        * Don't delete content in the folder
+        * download npm registry
+     - public
+        * contains static files
+        * static files are file that don't often
+        * icons / fonts / logo / image
+        * changeable / delete / add
+     - src
+        * source folder
+        * spend most of the time
+        * this is where to write the code
+     . gitignore
+        * gitignore
+            *    node_modules  ( too large )
+            *    key, private credentials, aws 
+     . package.json
+        * contains info about your app
+        * list of dependency
+        * Don't delete content in the folder
+
+
+
+How To Compose A component
+
+component
+ - a section of your interface
+
+class / functions
+
+class Card extend React.Component {
+    render () {
+        return (
+            <div>
+
+            </div>
+        )
+    }
+}
+
+
+function Card() {
+    return (
+        <section>
+            <div></div>
+            <div></div>
+        </section>
+    )
+}
+
+
+
+js + css + html
+
+- creating components
+- modules ( exporting / importing )
+- jsx ( introduction )
+
+Data in React
+------------
+Build ui
+Component - 
+  1-  properties (const, it can not change), state( let, it can change)
+  
+  2-  state of component (state can change)
+
+Parent Component
+     the component that calls other component
+
+Child Component 
+    is the component that is called
+
+properties 
+    is a type of data
+
+     - from the parent to the child
+     - one way data flow
+     - the child component must change the value of a prop
+     - if the prop should change, the child will tell parent will effect and send it back
+
+
+Behaviour of Component  
+ - it should be pure functions ( side effect )
+ - it should affect anything
+ - nothing should affect
+ - it should not have side effect 
+ - component should only focus on 1 thing
+
+ How Child Can Pass Data To Parent
+    - parent will have a function to accept data from Child
+    - the parent will give child that function
+    - anytime child needs to communicate with parent, it will call the function and pass it the data
+
+Behaviour of state
+    1- think about it like let
+    2- the value of state can change
+    3 -  state can not move between componet
+    4 -  if the value of state changes, the DOM will authomatically reload/ (re-render)
